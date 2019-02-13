@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <script type="text/javascript">
         function display(){
-            var names=["赵安博"];
+            var names=["赵蕾蕾"];
             var name=document.getElementById("name").value;
             var show=document.getElementById("show");
             show.innerHTML="";
@@ -21,14 +21,14 @@
                     flag=true;
                 }
             }
-            if(name=="" || name==false ){
+            if(name=="" || name==null ){
                 var text=document.createTextNode("请输入正确姓名");
                 show.appendChild(text);
             }else if(flag==true){
-                var text=document.createTextNode(name+"，情人节快乐!");
+                var text=document.createTextNode(name+"是小可爱");
                 show.appendChild(text);
-            }else if(name=="汤立春"){
-                var text=document.createTextNode(name+"是个大帅比！");
+            }else if(name=="赵安博"){
+                var text=document.createTextNode(name+"是帅比！");
                 show.appendChild(text);
             }
         }
